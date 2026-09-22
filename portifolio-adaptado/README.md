@@ -1,248 +1,196 @@
-\# 💻 Portfólio — Leandro Lopes
+# 💻 Portfólio — Leandro Lopes
 
+Portfólio pessoal desenvolvido para apresentar minha trajetória de estudos, conhecimentos em desenvolvimento Front-end, projetos práticos e minha evolução na área de tecnologia.
 
+## 🔄 Sobre esta versão
 
-Bem-vindo ao meu portfólio profissional!
+Esta versão do portfólio **substitui uma versão anterior do projeto**.
 
+A estrutura e o conteúdo principal do portfólio foram mantidos, com uma alteração específica na seção **Hero**, localizada na página inicial.
 
+O objetivo dessa alteração foi atualizar a apresentação visual da página inicial, mantendo a proposta e a estrutura geral do portfólio.
 
-Este projeto foi desenvolvido com o objetivo de apresentar minha trajetória de estudos na área de tecnologia, meus conhecimentos em desenvolvimento Front-End e alguns dos projetos que venho desenvolvendo durante minha formação.
+### ✨ Principal alteração
 
+A principal mudança desta versão está na **Hero Section**, que recebeu uma nova apresentação visual.
 
+A nova Hero mantém as informações principais do portfólio, como:
 
-\## 👨‍💻 Sobre o projeto
+* Apresentação pessoal;
+* Identificação como desenvolvedor Front-end em formação;
+* Descrição profissional;
+* Link para download do currículo;
+* Link para o LinkedIn;
+* Link para o GitHub.
 
+A área visual da Hero também foi atualizada para utilizar uma **animação em vídeo no formato MP4**, integrada diretamente à página por meio do elemento HTML `<video>`.
 
+---
 
-Este portfólio reúne informações sobre minha formação, conhecimentos, projetos e tecnologias que estou estudando.
+## 👨‍💻 Sobre o projeto
 
+O portfólio foi desenvolvido como parte da minha trajetória de aprendizagem na área de tecnologia.
 
+O projeto apresenta:
 
-O projeto também representa minha evolução no desenvolvimento Web, desde os primeiros estudos de HTML e CSS até a utilização de JavaScript, Git e GitHub para organização e publicação dos projetos.
+* Minha trajetória profissional;
+* Minha formação;
+* Tecnologias que estou estudando;
+* Conhecimentos em desenvolvimento Web;
+* Projetos desenvolvidos durante meus estudos;
+* Informações profissionais;
+* Links para minhas plataformas profissionais.
 
+O desenvolvimento também faz parte do meu processo de aprendizado prático em **HTML, CSS, JavaScript, Git e GitHub**.
 
+---
 
-\## 🚀 Tecnologias utilizadas
+## 🚀 Tecnologias utilizadas
 
+* **HTML5**
+* **CSS3**
+* **JavaScript**
+* **Git**
+* **GitHub**
+* **Font Awesome**
+* **Google Fonts**
+* **Design Responsivo**
+* **Media Queries**
 
+---
 
-\* HTML5
+## ⚙️ Funcionalidades
 
-\* CSS3
+O portfólio possui algumas funcionalidades desenvolvidas com JavaScript, incluindo:
 
-\* JavaScript
+### ⌨️ Efeito de digitação
 
-\* Git
+O texto da apresentação profissional possui um efeito de digitação realizado com JavaScript.
 
-\* GitHub
+### 📚 Experiência e formação
 
-\* GitHub Pages
+As informações de experiência profissional e educação são apresentadas de forma interativa, permitindo alternar entre os diferentes conteúdos.
 
-\* Design Responsivo
+### 🗂️ Filtro de projetos
 
-\* Media Queries
+A seção de projetos possui filtros para organizar os trabalhos apresentados de acordo com suas categorias.
 
+### 📱 Responsividade
 
+O layout utiliza CSS para adaptar a interface a diferentes tamanhos de tela, buscando proporcionar uma experiência adequada em computadores e dispositivos móveis.
 
-\### 🎨 Recursos utilizados
+---
 
-
-
-\* Google Fonts
-
-\* Imagens e recursos gráficos
-
-\* CSS para estilização e responsividade
-
-\* JavaScript para funcionalidades e interações
-
-
-
-\## 📂 Estrutura do projeto
-
-
+## 📂 Estrutura do projeto
 
 ```text
-
 portifolio/
-
 │
-
-├── css/
-
-│   ├── style.css
-
-│   └── responsivo.css
-
-│
-
-├── documentos/
-
-│   └── Curriculo\_Leandro\_Lopes\_do\_Carmo\_ATS.docx
-
-│
-
-├── font/
-
-│   ├── BerkshireSwash-Regular.ttf
-
-│   ├── Poppins-Regular.ttf
-
-│   ├── Poppins-SemiBold.ttf
-
-│   └── Poppins-Thin.ttf
-
-│
-
-├── img/
-
-│   ├── JS.png
-
-│   ├── buscador-CEP.png
-
-│   ├── buscador.jpeg
-
-│   ├── css.png
-
-│   ├── desenvolvimento.png
-
-│   ├── github.png
-
-│   ├── html.png
-
-│   ├── leandro.png
-
-│   ├── logica.jpg
-
-│   ├── logica.png
-
-│   ├── logo1.png
-
-│   └── verificador-idade.png
-
-│
-
-├── JavaScript/
-
-│   └── script.js
-
-│
-
-└── index.html
-
+└── portifolio-adaptado/
+    │
+    ├── index.html
+    │
+    ├── css/
+    │   └── style.css
+    │
+    ├── JavaScript/
+    │   └── script.js
+    │
+    ├── documentos/
+    │   └── Curriculo_Leandro_Lopes_do_Carmo_ATS.docx
+    │
+    ├── font/
+    │   ├── BerkshireSwash-Regular.ttf
+    │   ├── Poppins-Regular.ttf
+    │   ├── Poppins-SemiBold.ttf
+    │   ├── Poppins-Thin.ttf
+    │   └── PressStart2P-Regular.ttf
+    │
+    └── img/
+        ├── JS.png
+        ├── buscador-CEP.png
+        ├── buscador.jpeg
+        ├── css.png
+        ├── desenvolvimento.png
+        ├── github.png
+        ├── html.png
+        ├── leandro.png
+        ├── logica.jpg
+        ├── logica.png
+        ├── logo1.png
+        ├── retrato - Copia.mp4
+        └── verificador-idade.png
 ```
 
+---
 
+## 🧠 Desenvolvimento
 
-\## 🧠 Desenvolvimento
+Durante o desenvolvimento deste projeto, trabalhei principalmente com a estruturação semântica utilizando HTML5, estilização e organização visual com CSS3 e implementação de interações utilizando JavaScript.
 
+Também utilizei conceitos de:
 
+* Estrutura semântica;
+* Flexbox;
+* CSS Grid;
+* Responsividade;
+* Media Queries;
+* Animações CSS;
+* Manipulação do DOM;
+* Eventos JavaScript;
+* Organização de arquivos;
+* Caminhos relativos;
+* Versionamento com Git.
 
-Durante o desenvolvimento do portfólio, trabalhei principalmente com a estruturação de páginas utilizando HTML5, estilização com CSS3 e criação de funcionalidades com JavaScript.
+---
 
+## 📈 Processo de evolução
 
+Este projeto representa uma etapa da minha evolução como desenvolvedor Front-end.
 
-Também utilizei Media Queries para adaptar o projeto a diferentes tamanhos de tela, aplicando os conceitos de desenvolvimento responsivo e abordagem Mobile First.
+A cada nova versão, procuro analisar o código existente, identificar pontos que podem ser melhorados e aplicar novos conhecimentos adquiridos durante meus estudos.
 
+A alteração da Hero nesta versão faz parte desse processo de evolução visual e técnica do portfólio.
 
+O projeto continuará sendo atualizado conforme eu adquirir novos conhecimentos e desenvolver novos projetos.
 
-O projeto foi desenvolvido e organizado utilizando o Visual Studio Code e versionado com Git.
+---
 
+## 📚 Conhecimentos em desenvolvimento
 
+Atualmente estou desenvolvendo conhecimentos principalmente em:
 
-\## 🛠️ Desafios encontrados
+* Lógica de Programação;
+* HTML5;
+* CSS3;
+* JavaScript;
+* Git e GitHub;
+* Desenvolvimento Front-end;
+* Design Responsivo;
+* UX/UI;
+* Python.
 
+---
 
+## 🎯 Objetivo profissional
 
-Durante o desenvolvimento surgiram alguns problemas que fizeram parte do meu processo de aprendizagem.
+Meu objetivo é ingressar na área de tecnologia e continuar desenvolvendo minhas habilidades em programação e desenvolvimento Web.
 
+Busco transformar o conhecimento adquirido durante minha formação em projetos práticos, construindo uma base sólida para minha carreira como desenvolvedor.
 
+---
 
-Entre eles:
+## 👤 Autor
 
+**Leandro Lopes**
 
+Estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor Front-end em formação.
 
-\* Ajustes de caminhos relativos para imagens e outros arquivos.
+### 🔗 Contato e redes profissionais
 
-\* Problemas com imagens que não eram carregadas corretamente no GitHub Pages.
+* [LinkedIn](https://www.linkedin.com/in/leandrolopesdocarmo/)
+* [GitHub](https://github.com/leandrolopesdocarmo)
 
-\* Organização dos arquivos CSS, JavaScript, fontes e imagens.
+---
 
-\* Adaptação do layout para diferentes tamanhos de tela.
-
-\* Ajustes de Media Queries para melhorar a experiência em dispositivos móveis.
-
-\* Configuração e utilização do Git para versionamento do projeto.
-
-\* Configuração do repositório para publicação no GitHub.
-
-\* Correção de pequenos problemas de HTML, CSS e JavaScript durante o desenvolvimento.
-
-
-
-Esses problemas fizeram parte do processo de aprendizado e ajudaram a compreender melhor como um projeto Web é estruturado e publicado.
-
-
-
-\## 📚 Formação e aprendizado
-
-
-
-Este projeto faz parte da minha trajetória de estudos em Programação de Computadores.
-
-
-
-Durante minha formação venho estudando diferentes áreas da programação, incluindo:
-
-
-
-\* Lógica de Programação
-
-\* HTML5
-
-\* CSS3
-
-\* JavaScript
-
-\* Python
-
-\* Git e GitHub
-
-\* Desenvolvimento Web
-
-\* Design Responsivo
-
-
-
-\## 🎯 Objetivo profissional
-
-
-
-Meu objetivo é continuar evoluindo na área de tecnologia, aprimorando meus conhecimentos em desenvolvimento Web e construindo projetos que demonstrem minha evolução prática.
-
-
-
-Este portfólio será atualizado conforme novos conhecimentos e projetos forem desenvolvidos.
-
-
-
-\## 👤 Autor
-
-
-
-\*\*Leandro Lopes\*\*
-
-
-
-Estudante de Programação de Computadores.
-
-
-
-\---
-
-
-
-⭐ Este projeto representa parte da minha evolução durante meus estudos em tecnologia.
-
-
-
+⭐ Este portfólio representa uma etapa da minha evolução durante minha transição e formação na área de tecnologia.
