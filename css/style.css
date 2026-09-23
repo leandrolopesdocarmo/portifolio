@@ -2,7 +2,7 @@
 
 /* ==========================================
    RESET
-========================================== */
+==========================================*/ 
 
 * {
     margin: 0;
@@ -50,16 +50,16 @@
 body {
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #000;
+    background-color: #0e1217;
 }
 
 
 /* ==========================================
    HEADER
-========================================== */
+==========================================*/ 
 
 header {
-    background-color: #000;
+    background-color: #0e1217;
     padding: 10px;
 
     display: flex;
@@ -69,12 +69,12 @@ header {
 }
 
 header h1 {
-    color: red;
+    color: #4acfee;
     font-size: 2rem;
 }
 
 header span {
-    color: rgb(239, 243, 247);
+    color: #ff5d56;
 }
 
 header .navegacao-primaria {
@@ -104,114 +104,194 @@ header .navegacao-primaria li a:hover::after {
 
 
 /* ==========================================
-   HOME
+   HOME / HERO
 ========================================== */
 
 .section-div {
-    animation: inicializar 0.7s forwards;
-    /* background-image: url('../img/hero-retratoPortifolio.png'); */
-    background-size:cover;
-    background-position: center;
-    background-color: #000;
+    min-height: 650px;
+    margin: 25px 0;
+    padding: 60px 7%;
 
     position: relative;
     display: flex;
-    /* grid-template-columns: 1fr 1fr; */
-    
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-
     gap: 60px;
-    padding: 60px;
-}
 
-.section-div video {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    overflow: hidden;
+    border: 1px solid rgba(74, 207, 238, 0.45);
+    border-radius: 45px;
+    background: rgba(74, 207, 238, 0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 25px rgba(74, 207, 238, 0.55);
 
-.section-div > div {
-    position: relative;
-    margin-top: 120px;
-    align-self: start;
-    display: grid;
-    gap: 30px;
-    z-index: 3;
-}
-
-.section-div div h2 {
-    font-family: "start";
-    color: #f7f7f7;
-    font-size: 1.2rem;
-}
-
-.section-div div p {
-    font-family: "poppins";
-    color: aliceblue;
-    font-weight: 400;
-    line-height: 1.7;
-}
-
-
-.section-div div a {
-    background: rgba(0, 0, 0, 0.40);
-    font-family: "start";
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    align-items: center;
-    color: aliceblue;
-    width: 70%;
-    padding: 10px 20px;
-   
-    border-radius:100px;
-    border: 2px solid white;
-
-    transition: 0.3s;
-}
-
-.section-div div a:hover {
-    background-color: #dc3545;
-    border-color: #dc3545;
-}
-
-.section-div .social{
-    display: flex;
-    flex-direction: column; 
-   
-    gap: 5px;
-    margin-top: 0;
-}
-
-
-.section-div img {
-    max-width: 100%;
+    animation: inicializar 0.7s forwards;
 }
 
 .section-div::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.40);
-    z-index: 2;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.30), rgba(74, 207, 238, 0.08));
+    z-index: 0;
     pointer-events: none;
-} 
+}
+
+.section-div > .hero-content {
+    position: relative;
+    z-index: 2;
+    flex: 1 1 55%;
+    max-width: 620px;
+    display: grid;
+    gap: 22px;
+}
+
+.section-div .hero-content h2 {
+    font-family: "start";
+    color: #f7f7f7;
+    font-size: clamp(1.1rem, 2.2vw, 1.7rem);
+}
+
+.section-div .hero-content p {
+    max-width: 600px;
+    font-family: "poppins";
+    color: aliceblue;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.section-div .hero-content .social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+.section-div .hero-content .social a {
+    width: auto;
+    margin: 0;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+    border: 2px solid #4acfee;
+    border-radius: 40px;
+    background: rgba(14, 18, 23, 0.55);
+    color: #f7f7f7;
+    font-family: "poppins-sbold";
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.section-div .hero-content .social a:first-child {
+    background: #4acfee;
+    color: #0e1217;
+    box-shadow: 0 0 12px rgba(74, 207, 238, 0.65);
+}
+
+.section-div .hero-content .social a:hover {
+    background: #4acfee;
+    color: #0e1217;
+    box-shadow: 0 0 15px rgba(74, 207, 238, 0.7);
+}
+
+.section-div .hero-img {
+    position: relative;
+    z-index: 2;
+    flex: 0 1 400px;
+    width: 400px;
+    height: 400px;
+    border: 2px solid #4acfee;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(14, 18, 23, 0.35);
+    box-shadow: 0 0 15px rgba(74, 207, 238, 0.75);
+    transition: 0.5s;
+}
+
+.section-div .hero-img:hover {
+    box-shadow: 0 0 30px rgba(74, 207, 238, 0.95);
+    transform: translateY(-4px);
+}
+
+.section-div .hero-img video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
 /* ==========================================
-    TABLET (min-width: 768px)
+   TABLET / MOBILE
 ========================================== */
-@media (min-width: 768px) {
+
+@media (max-width: 900px) {
     .section-div {
-        /* background-image: url('../img/Atravessando-GIF.gif'); */
+        min-height: auto;
+        padding: 55px 8%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section-div > .hero-content {
+        max-width: 700px;
+        width: 100%;
+        justify-items: center;
+    }
+
+    .section-div .hero-content p {
+        max-width: 650px;
+    }
+
+    .section-div .hero-content .social {
+        justify-content: center;
+    }
+
+    .section-div .hero-img {
+        flex-basis: auto;
+        width: min(400px, 78vw);
+        height: min(400px, 78vw);
+    }
+}
+
+@media (max-width: 520px) {
+    .section-div {
+        margin: 15px 0;
+        padding: 45px 20px;
+        border-radius: 30px;
+        gap: 35px;
+    }
+
+    .section-div .hero-content h2 {
+        font-size: 1rem;
+    }
+
+    .section-div .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .section-div .hero-content .social {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .section-div .hero-content .social a {
+        width: min(260px, 100%);
     }
 }
 
 /* ==========================================
    EFEITO DIGITANDO
-========================================== */
+========================================== 
 
 .digitando::after {
     content: "|";
@@ -233,12 +313,12 @@ header .navegacao-primaria li a:hover::after {
         opacity: 0;
     }
 
-}
+}*/
 
 
 /* ==========================================
    ANIMAÇÃO INICIAL
-========================================== */
+==========================================*/
 
 @keyframes inicializar {
 
@@ -252,7 +332,7 @@ header .navegacao-primaria li a:hover::after {
         transform: translate3d(0, 0, 0);
     }
 
-}
+} 
 
 
 /* ==========================================
