@@ -236,3 +236,52 @@ buttonGeral.forEach((event, index) => {
 // ==========================================
 
 showLista(listaALL, 'all');
+
+// CARROSSEL DOS SERVIÇOS
+
+const secoesServicos = document.querySelectorAll('.services');
+const servicos = secoesServicos[0].querySelectorAll('li');
+
+let indiceAtual = 0;
+
+function carrosselServicos() {
+    servicos.forEach(item => {
+        item.classList.remove('carrossel-ativo');
+    });
+
+    servicos[indiceAtual].classList.add('carrossel-ativo');
+
+    indiceAtual++;
+
+    if (indiceAtual === servicos.length) {
+        indiceAtual = 0;
+    }
+}
+
+carrosselServicos();
+
+setInterval(carrosselServicos, 3000);
+
+// CARROSSEL DAS TECNOLOGIAS
+
+const tecnologias = secoesServicos[1].querySelectorAll('li');
+
+let indiceTecnologia = 0;
+
+function carrosselTecnologias() {
+    tecnologias.forEach(item => {
+        item.classList.remove('carrossel-ativo');
+    });
+
+    tecnologias[indiceTecnologia].classList.add('carrossel-ativo');
+
+    indiceTecnologia++;
+
+    if (indiceTecnologia === tecnologias.length) {
+        indiceTecnologia = 0;
+    }
+}
+
+carrosselTecnologias();
+
+setInterval(carrosselTecnologias, 3000);

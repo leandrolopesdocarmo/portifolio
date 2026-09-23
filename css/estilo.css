@@ -1085,3 +1085,71 @@ footer {
 
     text-align: center;
 }
+
+/* ==========================================
+         @media (min-width: 768px)
+========================================== */
+
+@media (min-width: 768px) {
+
+    /* SOBRE */
+    main .sobre {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sobre img {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .sobre_conteudo {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    /* SERVIÇOS */
+    .my_services ul li {
+        flex: 0 1 300px;
+    }
+
+    .projects_armazenamento ul {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/* ==================================================
+         @media (min-width:1024px) ajustes de desktop
+===================================================== */
+
+@media (min-width: 1024px) {
+
+    .resume_generico {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .resume_generico .experience_content div::before,
+    .resume_generico .education_content div::before {
+        display: none;
+    }
+
+    .projects_armazenamento ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .projects_armazenamento ul li img {
+        width: 350px;
+        height: 230px;
+    }
+
+}
+
+@media (max-width: 1023px) {
+    .my_services ul li {
+        display: none;
+    }
+
+    .my_services ul li.carrossel-ativo {
+        display:grid;
+    }
+}
